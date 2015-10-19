@@ -78,7 +78,7 @@ return [
     |
     */
 
-    'key' => env('APP_KEY', 'SomeRandomString'),
+    'key' => env('APP_KEY', 'nayRxyo8amolrx2kVf3aaguLNBdvIw6T'),
 
     'cipher' => 'AES-256-CBC',
 
@@ -145,6 +145,7 @@ return [
         p3\Providers\EventServiceProvider::class,
         p3\Providers\RouteServiceProvider::class,
 
+
     ],
 
     /*
@@ -193,6 +194,8 @@ return [
         'URL'       => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
+        'Form' => Collective\Html\FormFacade::class,
+        'Html' => Collective\Html\HtmlFacade::class,
 
     ],
 
