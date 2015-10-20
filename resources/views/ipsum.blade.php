@@ -2,9 +2,9 @@
 
 @section('title')
     P3
-@stop
+@endsection
 @section('body')
-@stop
+@endsection
 @section('form4')
 
     <form name="form4" id="form4" method="POST" action="/ipsum">
@@ -33,5 +33,5 @@
 
 
     </form>
-
+@endsection
 @stop

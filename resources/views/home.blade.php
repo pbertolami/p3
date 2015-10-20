@@ -31,7 +31,7 @@
                             @foreach($users as $key=>$value)
                                 <p>{{$users[$key]}}</p>
                             @endforeach
-                            what the fuck
+
                         @endif
                         @if(count($errors)>0)
                             <ul>
@@ -56,7 +56,7 @@
                         <p><a class="btn btn-default" href="#" role="button">Change User</a></p>
                     </div>
                 </form>
-
+@endsection
 
 
 

@@ -22,7 +22,7 @@ class HomeController extends Controller
     public function getUser()
     {
 
-        return view('layout');
+        return view('home');
 
     }
 
@@ -49,7 +49,7 @@ class HomeController extends Controller
 
 
         }
-            return view('layout', compact('users'));
+            return view('home', compact('users'));
     }
 
 

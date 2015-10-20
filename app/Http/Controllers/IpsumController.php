@@ -17,7 +17,7 @@ class IpsumController extends Controller
      */
     public function getIpsum()
     {
-        return view ('layout');
+        return view('ipsum');
     }
 
 
@@ -38,7 +38,7 @@ class IpsumController extends Controller
         //pass the variable $number into the generator
         $paragraphs = $generator->getParagraphs($number);
 
-        return view('layout', compact('paragraphs'));
+        return view('ipsum', compact('paragraphs'));
 
     }
 
