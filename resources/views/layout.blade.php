@@ -8,10 +8,16 @@
 </head>
 <body style="padding-top: 70px">
 
-<section>@yield('body')</section>
+<section>@yield('content1')</section>
+<div class="container">
+    <!-- Example row of columns -->
+    <div class="row">
 
-<section>@yield('form4')</section>
+<section>@yield('content2')</section>
 
+<section>@yield('content3')</section>
+
+<section>@yield('content4')</section>
 
 
 

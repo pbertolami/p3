@@ -17,15 +17,12 @@ class IpsumController extends Controller
      */
     public function getIpsum()
     {
-        return view('ipsum');
+        return view('home');
     }
 
 
     public function postIpsum(Request $request)
     {
-
-        //dd($request->all());
-        //if (!isset($numparagraphs)) {
 
         //validate
         $this->validate($request, [
@@ -38,7 +35,7 @@ class IpsumController extends Controller
         //pass the variable $number into the generator
         $paragraphs = $generator->getParagraphs($number);
 
-        return view('ipsum', compact('paragraphs'));
+        return view('home', compact('paragraphs'));
 
     }
 

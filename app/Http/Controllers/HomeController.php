@@ -7,6 +7,7 @@ use p3\Http\Requests;
 use p3\Http\Controllers\Controller;
 use Faker\Factory;
 use Badcow\LoremIpsum;
+use Illuminate\Support\Collection;
 
 class HomeController extends Controller
 {
@@ -29,6 +30,7 @@ class HomeController extends Controller
 
     public function postUser(Request $request)
     {
+
         $this->validate($request, [
             'numUser'=> 'required|integer|min:1|max:3'
         ]);
@@ -36,20 +38,16 @@ class HomeController extends Controller
         $faker = Factory::create();
         $number = $request->input('numUser');
 
-        // $faker->name;
-        // $faker->address;
-        //$faker->phoneNumber;
-        // $faker->email;
-       // if (!isset($users))
 
-        for($i=0; $i< $number; $i++) {
-            $users = array('name' => $faker->name, 'address' => $faker->address, 'phoneNumber' => $faker->phoneNumber, 'email' => $faker->email);
+        //$users=array();
+        for($i=0; $i<$number; $i++) {
 
-            //$lessons = ['my first', 'my second', 'my third'];
+            $users[$i] = array('name' => $faker->name, 'address' => $faker->address, 'phoneNumber' => $faker->phoneNumber,);
 
+        };
 
-        }
-            return view('home', compact('users'));
+        return view('home', compact('users','number'));
+
     }
 
 

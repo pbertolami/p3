@@ -20,11 +20,17 @@ Route::post('/home', 'HomeController@postUser');
 Route::get('/ipsum', 'IpsumController@getIpsum');
 Route::post('/ipsum', 'IpsumController@postIpsum');
 
+Route::get('/rand', 'PasswordController@getPassword');
+Route::post('/rand', 'PasswordController@postPassword');
 
 
-//Route::get('ipsum', 'IpsumController@getCreate');
-//Route::post('ipsum', 'IpsumController@postCreate');
 
-//Route::get('user', 'UserController@getCreate');
-//Route::post('user', 'UserController@postCreate');
+
+
+
+
+
+
+
+
 
